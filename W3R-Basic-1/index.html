@@ -5,17 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>W3R Basic #1</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: sans-serif;
+        margin: 0px;
+      }
+
+      .problem {
+        font-size: 0.8rem;
+        color: grey;
+        padding: 4em;
+      }
+
+      .answer {
+        background: #cccccc;
+        width: 60%;
+        color: black;
+        padding: 4em;
+      }
+
+      button {
+        padding: 1em 1.5em;
+        background: yellowgreen;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px #333;
+      }
+
+      button:hover {
+        background: #b6d27d;
+        cursor: pointer;
+      }
+
+      .demo {
+        margin-top: 2em;
+      }
+    </style>
   </head>
   <body>
     <h1>JavaScript Basic 1</h1>
-    <p>
-      Write a JavaScript program to display the current day and time in the
-      following format.
-    </p>
-    <p>
-      <em>Sample Output</em> : Today is : Tuesday. Current time is : 10 PM : 30
-      : 38
-    </p>
-    <p id="demo"></p>
+    <div class="problem">
+      <p>
+        Write a JavaScript program to display the current day and time in the
+        following format.
+      </p>
+      <p>
+        <em>Sample Output</em> : Today is : Tuesday. Current time is : 10 PM :
+        30 : 38
+      </p>
+    </div>
+    <div class="answer">
+      <button onclick="updateTime()">Current time</button>
+      <p id="demo" class="demo"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
