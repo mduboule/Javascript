@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W3R Basic #3</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: sans-serif;
+        margin: 0px;
+      }
+
+      .problem {
+        font-size: 0.8rem;
+        color: grey;
+        padding: 4em 0 2em 0;
+      }
+
+      .source {
+        margin-top: 3em;
+      }
+
+      .answer {
+        background: #cccccc;
+        width: 60%;
+        color: black;
+        padding: 4em;
+      }
+
+      button {
+        padding: 1em 1.5em;
+        background: yellowgreen;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px #333;
+      }
+
+      button:hover {
+        background: #b6d27d;
+        cursor: pointer;
+      }
+
+      .demo {
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Basic 3</h1>
+    <div class="problem">
+      <p>
+        Write a JavaScript program to get the current date.
+      </p>
+      <p>
+        <em>Expected Output:</em> mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy,
+        dd/mm/yyyy
+      </p>
+      <p class="source">
+        Source:
+        <a
+          href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php"
+          >https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php</a
+        >
+      </p>
+    </div>
+    <div class="answer">
+      <form action="#" name="form">
+        <label for="separator">Separator: </label>
+        <select name="separator" id="separator">
+          <option value="–">– dash</option>
+          <option value="/">/ slash</option>
+        </select>
+        <label for="dateFormat">Date format: </label>
+        <select name="dateFormat" id="dateFormat">
+          <option value="monthFirst">mm/dd/yyyy</option>
+          <option value="dayFirst">dd/mm/yyyy</option>
+        </select>
+      </form>
+      <p id="demo" class="demo"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
