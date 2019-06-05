@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W3R Basic #11</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: sans-serif;
+        margin: 0px;
+      }
+
+      .problem {
+        font-size: 0.8rem;
+        color: grey;
+        padding: 4em 0 2em 0;
+      }
+
+      .source {
+        margin-top: 3em;
+      }
+
+      .answer {
+        background: #cccccc;
+        width: 60%;
+        color: black;
+        padding: 4em;
+      }
+
+      button {
+        padding: 1em 1.5em;
+        background: yellowgreen;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px #333;
+      }
+
+      button:hover {
+        background: #b6d27d;
+        cursor: pointer;
+      }
+
+      .demo {
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Basic 11</h1>
+    <div class="problem">
+      <p>
+        Write a JavaScript program to convert temperatures to and from Celsius,
+        Fahrenheit.
+      </p>
+      <p>
+        [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f =
+        temperature in Fahrenheit ]
+      </p>
+      <p>
+        <em>Expected Output:</em> 60°C is 140 °F 45°F is 7.222222222222222°C
+      </p>
+      <p class="source">
+        Source:
+        <a
+          href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php"
+          >https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php</a
+        >
+      </p>
+    </div>
+    <div class="answer">
+      <form action="#" name="temperatures">
+        <label for="celsius">°C </label>
+        <input type="text" name="celsius" id="celsius" />
+        <label for="fahrenheit">°F </label>
+        <input type="text" name="fahrenheit" id="fahrenheit" />
+      </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
