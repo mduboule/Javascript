@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W3R DOM #1</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-family: sans-serif;
+            margin: 0px;
+        }
+
+        .problem {
+            font-size: 0.8rem;
+            color: grey;
+            padding: 4em 0 2em 0;
+        }
+
+        .source {
+            margin-top: 3em;
+        }
+
+        .answer {
+            background: #cccccc;
+            width: 60%;
+            color: black;
+            padding: 4em;
+        }
+
+        .dark {
+            background-color: darkslategrey;
+            color: white;
+        }
+
+        button {
+            padding: 1em 1.5em;
+            background: yellowgreen;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px #333;
+        }
+
+        button:hover {
+            background: #b6d27d;
+            cursor: pointer;
+        }
+
+        .demo {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript DOM #1</h1>
+    <div class="problem">
+        <p>
+            Modify the style of the paragraph text through javascript code.
+        </p>
+        <p class="source">
+            Source:
+            <a
+                href="https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php">https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php</a>
+        </p>
+    </div>
+
+    <div class="answer" id="answer">
+        <div class="switch">
+            <p id='text'>JavaScript Exercises - w3resource</p>
+            <button id="button" onclick="js_style()">Dark</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
